@@ -1,0 +1,59 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    
+}
+
+body{
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
+    background-color: black;
+}
+
+header{
+    height: 120px;
+    width:100%;
+}
+
+.banner{
+    height: 100px;
+    width:100%;
+    background: url("../images/banner_small.png") no-repeat;
+
+}
+
+#hero-outer{
+    height:400px;
+    width: 100%;
+    display: flex
+}
+
+
+#hero-image{
+    height:400px;
+    width: 60%;
+    background: url("../images/online-learning.jpg") center center;
+    background-size: cover
+
+
+}
+
+
+
+#cover-text h2 {
+    color: #ffffff;
+    padding: 20px;
+    text-transform: uppercase
+}
+
+#cover-text {
+    font-size: 100%;
+    font-family: Oswald;
+    letter-spacing: 4px;
+    width: 40%;
+    height: 600px;
+    color: #ffffff;
+    list-style-position: inside;
+    padding: 20px
+}
