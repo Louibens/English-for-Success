@@ -7,13 +7,54 @@
 
 body{
     font-family: Lato, sans-serif;
-    color: #3a3a3a;
+    color: white;
     background-color: black;
 }
 
 header{
     height: 120px;
     width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+#logo{
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active{
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .banner{
@@ -26,34 +67,56 @@ header{
 #hero-outer{
     height:400px;
     width: 100%;
-    display: flex
+    overflow: hidden;
+    position: relative;
 }
-
 
 #hero-image{
-    height:400px;
-    width: 60%;
-    background: url("../images/online-learning.jpg") center center;
-    background-size: cover
+    height:600px;
+    width: 100%;
+    background: url("../images/online-learning.jpg") no-repeat center center;
+    background-size: cover;
 
-
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
 
 
 #cover-text h2 {
     color: #ffffff;
-    padding: 20px;
+    
     text-transform: uppercase
 }
 
 #cover-text {
     font-size: 100%;
     font-family: Oswald;
-    letter-spacing: 4px;
-    width: 40%;
-    height: 600px;
-    color: #ffffff;
-    list-style-position: inside;
-    padding: 20px
+    text-transform: uppercase;
+
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+
+    background-color: rgba(255, 187, 0, 0.637);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
