@@ -17,14 +17,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 30px;
+
 }
 
-#logo{
-    float: left;
-    font-size: 280%;
-    margin-left: 30px;
+#big-e{
+    height: 100px;
+    width: 100px;
+}
+
+#logo-text{
+    height: 80px;
+    width: 220px;
+    padding-bottom: 10px;
 }
 
 /* navigation links */
@@ -34,9 +38,7 @@ header{
     letter-spacing: 4px;
 }
 
-#logo, #menu{
-    line-height: 75px;
-}
+
 
 #menu li {
     float: right;
@@ -55,13 +57,6 @@ header{
 
 .active{
     border-bottom: 1px solid #3a3a3a;
-}
-
-.banner{
-    height: 100px;
-    width:100%;
-    background: url("../images/banner_small.png") no-repeat;
-
 }
 
 #hero-outer{
@@ -91,32 +86,81 @@ header{
     to{
         transform: scale(1.05);
     }
+
 }
 
-
-#cover-text h2 {
-    color: #ffffff;
-    
-    text-transform: uppercase
+#why{
+    height: 600px;
 }
 
-#cover-text {
-    font-size: 100%;
-    font-family: Oswald;
-    text-transform: uppercase;
+#left-about{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
 
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+/* Club ethos center image */
+
+#welcome {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 280%;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    margin: 0 auto;
+}
 
-
-    background-color: rgba(255, 187, 0, 0.637);
-
-    bottom: 30px;
-    right: 150px;
-
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#circle-cover-bg {
+    background: url("../images/big-E-logo.png") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
 }
