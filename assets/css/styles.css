@@ -171,6 +171,69 @@ hr {
     height: 200px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+}
+
+.lang-img {
+    object-fit: cover;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.lang-info {
+    height: 300px;
+    margin: auto auto;
+    line-height: 40px;
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prep {
+    display: flex;
+    justify-content: center;
+}
+
+.prep-img {
+    object-fit: cover;
+    height: 300px;
+    margin-right: 50px
+}
+
+.misc {
+    display: flex;
+    justify-content: center;
+}
+
+.misc-img {
+    object-fit: cover;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.misc-info {
+    height: 300px;
+    margin: auto auto;
+    line-height: 50px;
+    min-width: 40%;
+}
+
 @media screen and (max-width: 1200px){
     #why{
         width: 65%;
