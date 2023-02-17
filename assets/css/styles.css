@@ -76,18 +76,18 @@ header{
     background-size: cover;
 
     /* Animates zoom effect on loading the page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-name: hero-blur;
+    animation-duration: 3s;
+    
 }
 
 /* Creates the level of zoom for hero image */
-@keyframes hero-zoom {
+@keyframes hero-blur {
     from{
-        transform: scale(1);
+        filter: blur(10px)
     }
     to{
-        transform: scale(1.05);
+        filter: blur(0px)
     }
 
 }
