@@ -413,6 +413,22 @@ h1 {
      text-align: start;
     }
 
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: large;
+    }
+    
+    .details {
+        padding: 20px;
+        line-height: 70px;
+    }
+    
+    .details p a {
+        text-decoration: none;
+        color: white;
+    }
+
     }
     
     /* navigation links */
