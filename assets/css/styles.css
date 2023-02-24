@@ -81,6 +81,16 @@ header{
     
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    padding: 20px;
+    line-height: 50px;
+}
+
 /* Creates the level of zoom for hero image */
 @keyframes hero-blur {
     from{
