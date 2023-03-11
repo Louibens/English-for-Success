@@ -41,8 +41,6 @@ header{
     letter-spacing: 4px;
 }
 
-
-
 #menu li {
     float: right;
     list-style-type: none;
@@ -62,20 +60,15 @@ header{
     border-bottom: 1px solid #3a3a3a;
 }
 
-
-
-
-
-
 #hero-outer{
-    height:400px;
+    height:300px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 #hero-image{
-    height:600px;
+    height:300px;
     width: 100%;
     background: url("../images/online-learning.jpg") no-repeat center center;
     background-size: cover;
@@ -84,6 +77,59 @@ header{
     animation-name: hero-blur;
     animation-duration: 3s;
     
+}
+
+#easter-image{
+    height:300px;
+    width: 100%;
+    background: url("../images/study.jpg") no-repeat center center;
+    background-size: cover;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-blur;
+    animation-duration: 3s;
+    
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 100px;
+
+    animation-name: throb;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 100px;
+    right: 150px;
+
+    position: absolute;
+
+}
+
+#easter-cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    width: 250px;
+    height: 80px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 500px;
+    right: 150px;
+
+    position: absolute;
+
 }
 
 
@@ -112,11 +158,19 @@ header{
     from{
         filter: blur(10px)
     }
-    to{
+    to {
         filter: blur(0px)
     }
 
 }
+
+/* Creates the level of zoom for hero image */
+@keyframes throb {
+    0% {transform:scale(1)}
+    100% {transform:scale(1.5)}
+    }
+
+
 
 .why{
     font-size: larger;
@@ -169,7 +223,7 @@ hr {
     text-align: right;
 }
 
-/* Club ethos center image */
+/* center image */
 
 #welcome {
     margin: 20px 0;
@@ -218,7 +272,7 @@ h1 {
 .lang-img {
     object-fit: cover;
     height: 300px;
-    
+    border-radius: 50%;
     margin-top: 10px;
     margin-bottom: 10px
 }
@@ -244,7 +298,7 @@ h1 {
 .prep-img {
     object-fit: cover;
     height: 300px;
- 
+    border-radius: 50%;
 }
 
 .misc {
@@ -257,7 +311,13 @@ h1 {
     height: 300px;
     margin-left: 50px;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+#cover-text * {
+    text-decoration: none;
+    color: white
 }
 
 .misc-info {
@@ -265,6 +325,16 @@ h1 {
     margin: auto auto;
     line-height: 50px;
     min-width: 40%;
+}
+
+.easter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 50px auto
 }
 
 @media screen and (max-width: 1200px){
@@ -341,7 +411,7 @@ h1 {
     }
 
 
-    /* For medium screens sizes from 950px wide and down */
+    /* For medium screens sizes from 820px wide and down */
 @media screen and (max-width: 820px){
 
     
@@ -438,6 +508,50 @@ h1 {
     .details p a {
         text-decoration: none;
         color: white;
+    }
+
+    #cover-text {
+        font-size: 100%;
+        font-family: Oswald;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding: 10px;
+        width: 200px;
+        height: 80px;
+    
+        background-color: rgba(241, 109, 107, .7);
+    
+        bottom: 500px;
+        right: 150px;
+    
+        position: absolute;
+    
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 150% !important;
+        font-weight: bold;
+        letter-spacing: 4px;
+    
+    }
+
+    #easter-cover-text {
+        font-size: 130%;
+        font-family: Oswald;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding: 10px;
+        width: 250px;
+        height: 80px;
+    
+        background-color: rgba(241, 109, 107, .7);
+    
+        bottom: 500px;
+        right: 50px;
+    
+        position: absolute;
+    
     }
 
     }
