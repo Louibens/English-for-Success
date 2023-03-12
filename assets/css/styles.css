@@ -98,7 +98,6 @@ header{
     letter-spacing: 4px;
 
     width: 300px;
-    height: 100px;
 
     animation-name: throb;
     animation-duration: 3s;
@@ -121,7 +120,6 @@ header{
     letter-spacing: 4px;
     padding: 10px;
     width: 250px;
-    height: 80px;
 
     background-color: rgba(241, 109, 107, .7);
 
@@ -337,61 +335,11 @@ h1 {
     margin: 50px auto
 }
 
-@media screen and (max-width: 1200px){
-
-
-    #times div {
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
-    }
-
-    hr {
-        display: none;
-    }
-
-    .why {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .left-about-heading {
-        width: 100%
-    }
-    
-    .right-about-heading {
-        width: 100%
-    }
-
-    #left-about{
-        padding-top: 30px;
-        width: 100%;
-
-    }
-    
-    #right-about {
-        padding-top: 30px;
-        width: 100%;
-
-    }
-    
-    #center-about {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    }
-
-
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
 
     
     #menu{
-
         margin-left: 30px; 
         margin-bottom: 20px;
         line-height: 25px;
@@ -407,6 +355,57 @@ h1 {
             height: 60px;
             width: 180px;
             padding-bottom: 20px;
+        }
+
+        .why{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #left-about{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+ 
+        }
+        
+        #right-about {
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        #center-about {
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-about-heading p {
+            text-align: left;
+        }
+        
+        .right-about-heading h2 {
+            text-align: left;
+        }
+
+        .left-about-heading p {
+            text-align: left;
+        }
+        
+        .left-about-heading h2 {
+            text-align: left;
         }
     }
 
@@ -432,15 +431,7 @@ h1 {
     #logo-text{
         visibility: hidden;
         }
-    }
-
-/* For medium screens sizes from 950px wide and down */
-@media screen and (max-width: 820px){
-
-    #menu{
-    font-size: 100%;
-    letter-spacing: 4px;
-    }
+    
 
     .services-container {
         margin-right:10%;
@@ -517,7 +508,7 @@ h1 {
         letter-spacing: 4px;
         padding: 10px;
         width: 200px;
-        height: 80px;
+
     
         background-color: rgba(241, 109, 107, .7);
     
@@ -543,7 +534,7 @@ h1 {
         letter-spacing: 4px;
         padding: 10px;
         width: 250px;
-        height: auto;
+
     
         background-color: rgba(241, 109, 107, .7);
     
