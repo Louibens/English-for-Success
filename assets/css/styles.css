@@ -545,6 +545,12 @@ h1 {
     
     }
 
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: large;
+    }
+
     }
     
 
