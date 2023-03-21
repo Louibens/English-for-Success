@@ -11,6 +11,7 @@ body{
     font-family: Lato, sans-serif;
     color: white;
     background-color: black;
+    font-size: 20px;
 }
 
 header{
@@ -92,7 +93,7 @@ header{
 }
 
 #cover-text {
-    font-size: 130%;
+    font-size: 100%;
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -113,22 +114,6 @@ header{
 
 }
 
-#easter-cover-text {
-    font-size: 130%;
-    font-family: Oswald;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 10px;
-    width: 250px;
-
-    background-color: rgba(241, 109, 107, .7);
-
-    bottom: 500px;
-    right: 150px;
-
-    position: absolute;
-
-}
 
 
 .map {
@@ -168,11 +153,6 @@ header{
     100% {transform:scale(1.5)}
     }
 
-
-
-.why{
-    font-size: larger;
-}
 
 #left-about{
     padding-top: 30px;
@@ -223,12 +203,6 @@ hr {
 
 /* center image */
 
-#welcome {
-    margin: 20px 0;
-    text-align: center;
-    font-size: 280%;
-}
-
 #circle-container {
     width: 200px;
     height: 200px;
@@ -251,10 +225,10 @@ hr {
 
 h1 {
     text-align: center;
-    font-size: 200%;
+    font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 4px;
-
+    margin: 20px auto;
 }
 
 .services-container {
@@ -409,6 +383,10 @@ h1 {
         }
     }
 
+    #services {
+        margin: 20px
+    }
+
 
     /* For medium screens sizes from 820px wide and down */
 @media screen and (max-width: 820px){
@@ -552,15 +530,60 @@ h1 {
     }
 
 iframe {
-  width: 370px
+  width: 300px
 }      
     }
 
+/* For medium screens sizes from 820px wide and down */
+@media screen and (max-width: 500px){
     
-    
+    .why{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-    
+    #left-about{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
+    }
+    
+    #right-about {
+        margin: 10px 10px
+
+    }
+
+    #center-about {
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-about-heading p {
+        text-align: center;
+    }
+    
+    .right-about-heading h2 {
+        text-align: center;
+    }
+
+    .left-about-heading p {
+        text-align: left;
+    }
+    
+    .left-about-heading h2 {
+        text-align: left;
+    }
+    
+}
 
 
 
