@@ -98,7 +98,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    width: 300px;
+    width: auto;
 
     animation-name: throb;
     animation-duration: 3s;
